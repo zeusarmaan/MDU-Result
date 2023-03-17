@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Marksheet</title>
+	<p id="English"></p>
+	<script type="text/javascript">
+		let english = parseInt(prompt("enter your english marks"));
+		let civics = parseInt(prompt("enter your civics marks"));
+		let geography = parseInt(prompt("enter your geography marks"));
+		let history = parseInt(prompt("enter your history marks"));
+		let economics = parseInt(prompt("enter your economics marks")); 
+		let Total = 500;
+		let allsub = english+history+geography+civics+economics;
+		let per = allsub*100/Total;
+
+		if(allsub>=165) {
+		alert("pass")
+		}
+
+		else{
+		alert("fail")
+		}
+
+	</script>
+	<style type="text/css">
+		.table{
+			border-style: outset;
+			border-color: black;
+			font-size: 40px;
+			border-radius: 15px;
+			border-width: 7px;
+		}
+
+		.table:hover{
+			border-color: black;
+		}
+
+		.zoom{
+			border-radius: 10px;
+		}
+
+		.zoom:hover{
+			font-size: 42px;
+			color: darkred;
+			background-color: lightgray;
+		}
+
+		.heading{
+			font-size: 45px;
+			background-color: lightgray;
+		}
+
+		.heading1{
+			background-color: lightgray;
+		}
+
+		.border{
+			border-radius: 10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<center>
+	<h1 class="heading1">Examination Results</h1>
+	<h1>Senior School Certificate Examination (Class XII) Results 2023</h1>	</center>
+
+	<p>Roll No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;229182</p>
+	<p>Candidate Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ARMAAN SHAFI</b></p>
+	<p>Mother's Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEHSHAR JAHAN</p>
+	<p>Father's Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHAFI IQBAL</p>
+	<p>School's Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEV SAMAJ MODERN SCHOOL NO.2</p>
+	<center>
+<table class="table" border="10" cellspacing="5" cellpadding="7">
+	<th class="heading">Subject</th>
+	<th class="heading">Total Marks</th>
+	<th class="heading">Total Marks Obtained</th>
+	<th class="heading">Grace</th>
+	<th class="heading">Grades</th>
+	<tr>
+		<td class="zoom">English</td>
+		<td class="zoom">100</td>
+		<td class="zoom"><script>document.write(english)</script></td>
+			</tr><br>
+	<tr>
+
+		<td class="zoom">Geography</td>
+		<td class="zoom">100</td>
+		<td class="zoom"><script>document.write(geography)</script></td>
+			</tr>
+	<tr>
+
+		<td class="zoom">Civics</td>
+		<td class="zoom">100</td>
+		<td class="zoom"><script>document.write(civics)</script></td>
+
+			</tr>
+	<tr>
+
+		<td class="zoom">History</td>
+		<td class="zoom">100</td>
+		<td class="zoom"><script>document.write(history)</script></td>
+
+			</tr>
+	<tr>
+
+		<td class="zoom">Economics</td>
+		<td class="zoom">100</td>
+		<td class="zoom"><script>document.write(economics)</script></td>
+
+			</tr>
+</table>
+</center>
+</body>
+</html>
